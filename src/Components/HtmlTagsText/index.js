@@ -1,1 +1,1 @@
-export * from "./htmlElements";
+export { default as HElement } from "./HtmlElements";
