@@ -1,6 +1,5 @@
 import "./App.css";
-import SideBar from "./Components/constants/sideBar";
-import HElement from "./Components/constants/htmlElements";
+import SideBar from "./Components/SideBar/sideBar";
 function App() {
   return (
     <div className="App">

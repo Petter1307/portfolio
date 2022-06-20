@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, NavLink } from "react-router-dom";
-// import { logo } from "../../assets/logo.svg";
+import HElement from "../HtmlTagsText/htmlElements";
 import {
   faFacebook,
   faLinkedin,
@@ -17,8 +17,10 @@ import "./style.scss";
 const SideBar = () => {
   return (
     <div className="nav-bar">
+      <HElement value={"div"} />
       <FontAwesomeIcon className="logo" icon={faHdd} />
       <nav>
+        <HElement value={"nav"} />
         <a>
           <FontAwesomeIcon icon={faHome} />
         </a>
@@ -26,11 +28,12 @@ const SideBar = () => {
           <FontAwesomeIcon icon={faUser} />
         </a>
         <a>
-          <FontAwesomeIcon icon={faEnvelope} />
-        </a>
-        <a>
           <FontAwesomeIcon icon={faNewspaper} />
         </a>
+        <a>
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+        <HElement value={"/nav"} />
       </nav>
 
       <ul>
@@ -49,6 +52,7 @@ const SideBar = () => {
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
+        <HElement value={"/div"} />
       </ul>
     </div>
   );
