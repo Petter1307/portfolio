@@ -1,9 +1,14 @@
 import "./App.css";
-import { SideBar } from "./Components";
+import { Layout, Home } from "./Components";
+import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <SideBar />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
