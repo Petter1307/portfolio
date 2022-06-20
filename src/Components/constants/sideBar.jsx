@@ -6,12 +6,18 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faUser,
+  faEnvelope,
+  faNewspaper,
+  faHdd,
+} from "@fortawesome/free-solid-svg-icons";
 import "./style.scss";
 const SideBar = () => {
   return (
     <div className="nav-bar">
-      {/* <img src={logo} /> */}
+      <FontAwesomeIcon className="logo" icon={faHdd} />
       <nav>
         <a>
           <FontAwesomeIcon icon={faHome} />
@@ -21,6 +27,9 @@ const SideBar = () => {
         </a>
         <a>
           <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+        <a>
+          <FontAwesomeIcon icon={faNewspaper} />
         </a>
       </nav>
 
