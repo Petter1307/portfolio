@@ -1,5 +1,5 @@
 const HElement = ({ value }) => {
-  return <span>&lt;{value}&gt;</span>;
+  return <span className="html-element">&lt;{value}&gt;</span>;
 };
 
 export default HElement;
